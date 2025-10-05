@@ -1,0 +1,40 @@
+body {
+  background-color: #f8f9fa;
+  font-family: "Poppins", sans-serif;
+}
+
+.modal-content {
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.modal-img {
+  height: 100%;
+  object-fit: cover;
+}
+
+.credit-img {
+  width: 80px;
+  margin-bottom: 20px;
+}
+
+h1 {
+  font-size: 1.8rem;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+form {
+  max-width: 400px;
+  margin: auto;
+}
+
+.form-control {
+  border-radius: 12px;
+  margin-bottom: 15px;
+}
+
+.btn-danger {
+  border-radius: 12px;
+  font-weight: 500;
+}

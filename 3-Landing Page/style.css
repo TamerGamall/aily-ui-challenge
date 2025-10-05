@@ -1,0 +1,74 @@
+body {
+  /* background: linear-gradient(90deg, rgb(32, 190, 32), white); */
+  background: linear-gradient(
+      135deg,
+      rgba(217, 247, 217, 0.9),
+      rgba(255, 255, 255, 0.9)
+    ),
+    url("tree.png") center/cover no-repeat fixed;
+}
+h1 {
+  margin: 2% 40% 0 40%;
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 60px;
+  line-height: 1.5;
+  color: rgb(2, 80, 2);
+}
+p {
+  font-weight: 400;
+}
+.nav {
+  background: rgba(255, 255, 255, 0.3);
+  backdrop-filter: blur(10px);
+}
+.navbar-brand {
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 25px;
+  color: rgb(2, 80, 2);
+}
+.nav-link {
+  color: rgb(2, 80, 2);
+}
+.tree {
+  width: 60%;
+  position: relative;
+  left: 550px;
+  top: -400px;
+  z-index: -1;
+  backdrop-filter: blur(10px);
+}
+.search {
+  width: 70%;
+  left: 200px;
+}
+.btn {
+  background-color: rgb(2, 80, 2) !important;
+  border: none;
+  font-size: 1rem;
+}
+@media (max-width: 900px) {
+  .tree {
+    width: 60%;
+    position: relative;
+    left: 30px;
+    top: 40px;
+    display: none;
+  }
+  h1 {
+    margin: 2% 30%;
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 40px;
+    line-height: 1.5;
+  }
+  .search {
+    width: 90%;
+    left: -32px;
+  }
+  .container {
+    background-repeat: no-repeat;
+    text-align: center;
+    padding: 0 15px;
+  }
+}

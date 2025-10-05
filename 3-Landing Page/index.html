@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg sticky-top nav">
+        <div class="container-fluid">
+            <a class="navbar-brand ms-3" href="#">🌿 Tree Care</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contact</a>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="container">
+        <div class="heading">
+            <h1>TREE CARE</h1>
+            <p class="text-center">Discover the best tips for keeping your trees healthy and green.</p>
+            <div class="form-floating mb-3 search">
+                <div class="row ms-5 mb-3">
+                    <div class="col-10 pe-0">
+                        <input type="search" class="form-control pe-0" id="floatingInput"
+                            placeholder="Search about tree care, diseases, or fertilizers...">
+                    </div>
+                    <div class="col-2  ps-0">
+                        <div class="btn btn-primary bg-dark" onclick="search()"><i
+                                class="fa-solid fa-magnifying-glass"></i></div>
+                    </div>
+                </div>
+                <p class="text-center search-result"></p>
+                <div class="row">
+                    <div class="col-lg-6 col-sm-12 ps-5">
+                        <h3>How Often Should You Water Your Trees?</h3>
+                        <p>Overwatering and underwatering can both harm your trees. Most trees only need deep watering
+                            once a week.
+                            During summer, focus on the soil’s moisture — not the leaves — and water early in the
+                            morning or late in the evening.</p>
+                        <h3>The Best Time to Prune Your Trees</h3>
+                        <p>Pruning helps trees grow properly — but timing is everything.
+                            Late winter or early spring is the ideal time for most species, as trees are still dormant
+                            and can heal faster.</p>
+                        <h3>How Trees Improve Mental Health</h3>
+                        <p>Studies show that spending time around trees reduces anxiety and boosts happiness.
+                            Just 10 minutes under a shady tree can calm your mind, slow your heartbeat, and increase
+                            focus.</p>
+                    </div>
+                    <div class="col-lg-6 col-sm-12 ps-5">
+                        <h5>Why Tree Care Matters?</h5>
+                        <p>Taking care of trees isn’t just about beauty — it’s about balance. Healthy trees improve air
+                            quality, reduce stress, and protect the planet by absorbing carbon dioxide.
+                            When trees are properly maintained, they grow stronger, live longer, and resist diseases
+                            more effectively.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <img class="tree" src="tree.png" alt="">
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

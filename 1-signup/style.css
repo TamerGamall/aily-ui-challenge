@@ -1,0 +1,28 @@
+body {
+  background: url("https://thumbs.dreamstime.com/b/poster-background-volunteer-social-event-cleaning-public-park-cartoon-people-collecting-trash-rubbish-litter-200338691.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.container {
+  background: rgba(255, 255, 255, 0.2);
+  margin: 5% auto;
+  width: 400px;
+  border-radius: 10%;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease;
+}
+.container:hover {
+  /* transform: translateY(-100px);  */
+  transform: scale(1.05);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+}
+.head {
+  display: flex;
+  justify-content: center;
+  padding-top: 100px;
+  margin-bottom: 25px;
+}
+form {
+  padding: 20px;
+}
