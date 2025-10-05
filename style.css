@@ -1,5 +1,17 @@
-.ulss {
-  color: red;
-  font-size: 50px;
-  transition: 0.1s ease-in-out;
+body {
+  background: linear-gradient(270deg, rgb(65, 64, 64), white);
+}
+h1 {
+  font-family: "Bebas Neue", sans-serif;
+}
+p {
+  font-size: 11px;
+}
+.card {
+  transition: all 0.3s ease;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+.card:hover {
+  transform: translateY(-15px);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
 }
