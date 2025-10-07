@@ -1,0 +1,69 @@
+.icon {
+  background-color: transparent;
+  display: flex;
+  justify-content: center;
+  margin-top: 10%;
+}
+
+.card {
+  /* border-radius: 24px; */
+  background: transparent;
+  border: none;
+}
+.outter {
+  border-radius: 24px;
+  padding: 8px;
+  box-shadow: 10px 10px 15px 5px rgba(0, 0, 0, 0.4);
+  display: flex;
+  background: linear-gradient(135deg, #2c90ff, #00e0b8, #0077ff, #00ffc8);
+  background-size: 300% 300%;
+  animation: gradientShift 6s ease infinite, bounce 2s infinite ease-in-out;
+}
+
+.inner {
+  border-radius: 16px;
+  background: linear-gradient(135deg, #2c90ff, #00e0b8, #0077ff, #00ffc8);
+  background-size: 300% 300%;
+  width: 120px;
+  height: 120px;
+  animation: gradientShift 6s ease infinite reverse;
+}
+
+/* تحريك الألوان */
+@keyframes gradientShift {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+/* حركة الباونس القديمة */
+@keyframes bounce {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+.text {
+  font-family: "Fugaz One", sans-serif;
+  color: antiquewhite;
+  font-size: 45px;
+}
+.c {
+  color: rgba(0, 0, 0, 0.3);
+  position: relative;
+  right: 5px;
+}
+h1 {
+  display: flex;
+  /* align-items: center; */
+}
