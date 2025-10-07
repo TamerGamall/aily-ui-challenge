@@ -1,0 +1,57 @@
+body {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background: linear-gradient(
+      135deg,
+      rgba(217, 247, 217, 0.9),
+      rgba(255, 255, 255, 0.3)
+    ),
+    url(https://wpblogassets.paytm.com/paytmblog/uploads/2023/09/Blog_Paytm_Personal-loan-repayment-strategies.jpg)
+      center/cover no-repeat fixed;
+}
+/* h1 {
+  margin: 2% 40% 0 40%;
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 60px;
+  line-height: 1.5;
+  color: rgb(2, 80, 2);
+} */
+/* p {
+  font-weight: 400;
+} */
+.nav {
+  background: rgba(255, 255, 255, 0.3);
+  backdrop-filter: blur(100px);
+  color: #6bd7fe;
+}
+.navbar-brand {
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 30px;
+  color: #36829e;
+  line-height: 2;
+}
+.form-control {
+  transition: ease 0.3s;
+}
+.form-control:focus {
+  transform: scale(1.05);
+  color: #6bd7fe;
+  font-weight: 700;
+}
+.btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #36829e;
+  border: #36829e;
+}
+.btn:hover {
+  background-color: #6bd7fe;
+}
+@media (max-width: 900px) {
+  .navbar-brand {
+    font-size: 20px;
+  }
+}
