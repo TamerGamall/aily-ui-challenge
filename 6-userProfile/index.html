@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Profile</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alan+Sans:wght@300..900&family=BBH+Sans+Hegarty&display=swap"
+        rel="stylesheet">
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Heading -->
+    <div class="container-fluid mb-5">
+        <div class="row">
+            <div class="col-12 profile-cover">
+                <div class="profile-Img mt-4"><img
+                        src="https://scontent.fcai19-1.fna.fbcdn.net/v/t39.30808-6/509948335_1376525310314188_9147345924373976763_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=6ee11a&_nc_ohc=J8A3H2BFFkwQ7kNvwFoommE&_nc_oc=AdmN05p93rI3rHfufVipYB9Q7JNUCa9Ud-P3jys8_liz4ERlSQzLwqmxCUJRT6p6dwM&_nc_zt=23&_nc_ht=scontent.fcai19-1.fna&_nc_gid=lOTZjMzp7TkgCKa2vsNSXg&oh=00_AffZZLPZAsuPcTBNB3rpPq2AEdtb92O0VxZL5voXCUvUXw&oe=68EDDBB7"
+                        alt="profile img" id="profileImage" onclick="showProfileModal(this.src)">
+                    </img>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Profile Image Modal -->
+    <div class=" modal fade" id="profileModal" tabindex="-1" aria-labelledby="profileModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content bg-transparent border-0">
+                <div class="modal-body text-center p-0">
+                    <img id="profileModalImg" src="" alt="Profile Image" class="img-fluid rounded-3 shadow-lg">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Heading -->
+    <div class="container-fluid">
+
+        <div class="row mt-5">
+            <div class="col-lg-4 leftSide mt-1">
+                <h1 class="text-center mb-0">Tamer Gamal</h1>
+                <h5 class="text-center jop">@ _tamergamal</h5>
+                <div class="row  ms-5">
+                    <div class="col-5 me-2 btn btn-primary">Follow</div>
+                    <div class="col-5  btn btn-outline-secondary">Message</div>
+                </div>
+                <div class="card cardFollow ms-3 mt-3">
+                    <div class="card-body text-center">
+                        <div class="row">
+                            <div class="col-4">Follwing</div>
+                            <div class="col-4">Followers</div>
+                            <div class="col-4">Likes</div>
+                        </div>
+                        <div class="row">
+                            <div class="col-4">10</div>
+                            <div class="col-4">50.9K</div>
+                            <div class="col-4">2.9M</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card cardFollow">
+                    <div class="card-body">
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Harum labore assumenda
+                            necessitatibus
+                            odio
+                            quia, similique fugit laudantium earum. Aspernatur iste voluptates odit tempora, sed
+                            eos ipsa
+                            exercitationem mollitia dolorum repellat.</p>
+                    </div>
+                </div>
+                <div class="card cardFollow info">
+                    <div class="card-body">
+                        <div class="row">
+                            <i class="fa-solid fa-house col-1"></i>
+                            <h6 class="col-11">Mansoura, Egypt</h6>
+                        </div>
+                        <div class="row">
+                            <i class="fa-solid fa-university col-1"></i>
+                            <h6 class="col-11">Faculty Of Specfic Education</h6>
+                        </div>
+                        <div class="row">
+                            <i class="fa-solid fa-briefcase col-1"></i>
+                            <h6 class="col-11">Tech Soulotions</h6>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-8 mt-4">
+                <div class="row" style="cursor: pointer;">
+                    <div class="col-4 text-center active">
+                        <i class="fs-2 fa-solid fa-image-portrait"></i>
+                        <hr>
+                    </div>
+                    <div class="col-4 text-center ">
+                        <i class="fs-2 fa-solid fa-video"></i>
+                        <hr>
+                    </div>
+                    <div class="col-4 text-center ">
+                        <i class="fs-2 fa-solid fa-headset"></i>
+                        <hr>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-lg-4 ">
+                        <div class="card">
+                            <div class="card-body">
+                                <img class="content-img"
+                                    src="https://scontent.fcai19-1.fna.fbcdn.net/v/t39.30808-6/472589439_1259264112040309_6335498621018200241_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=a5f93a&_nc_ohc=7WExO2_NtgsQ7kNvwEOkKgT&_nc_oc=AdlF6k8yl97pppllxvtdedVE9Ziaa0N0Jd0CGy51VJJKPW2dBrw2c8zF2jX_Xa_5B-4&_nc_zt=23&_nc_ht=scontent.fcai19-1.fna&_nc_gid=Gqg_miaTcTeC96DEI5s7uw&oh=00_Afe5ESguZHCstJbkkuSRhSXIq3_vNcF3cL7C0HlWvN08yw&oe=68EDFED0"
+                                    alt="">
+                                <div class="row text-center mt-2">
+                                    <div class="col-4">20k <i class="fa-solid fa-heart"></i></div>
+                                    <div class="col-4">1.5K <i class="fa-solid fa-comment"></i></div>
+                                    <div class="col-4">100 <i class="fa-solid fa-share"></i></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 ">
+                        <div class="card">
+                            <div class="card-body">
+                                <img class="content-img"
+                                    src="https://scontent.fcai19-1.fna.fbcdn.net/v/t39.30808-6/479298866_1282577309708989_301820842247462788_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=a5f93a&_nc_ohc=4X5mvBm7jUYQ7kNvwEHvjEN&_nc_oc=AdnTVlRnYulMbGsp_0Gb4SE5dLUdy_CY5U95qODWs5FdevFeinNuZSe05xknfkXmDnw&_nc_zt=23&_nc_ht=scontent.fcai19-1.fna&_nc_gid=WOVE37DKipiKqCoUNTh4tg&oh=00_Afdtxz5ezJ_rJxHooiicI6fJ7ABsJWRTi6-VmyiYW-kI_A&oe=68EDCDBD"
+                                    alt="">
+                                <div class="row text-center mt-2">
+                                    <div class="col-4">12.5k <i class="fa-solid fa-heart"></i></div>
+                                    <div class="col-4">900 <i class="fa-solid fa-comment"></i></div>
+                                    <div class="col-4">100 <i class="fa-solid fa-share"></i></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 ">
+                        <div class="card">
+                            <div class="card-body">
+                                <img class="content-img"
+                                    src="https://scontent.fcai19-1.fna.fbcdn.net/v/t39.30808-6/476631199_1282006093099444_1618066029684260747_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=a5f93a&_nc_ohc=1JGaNQqMgWMQ7kNvwHNSMRF&_nc_oc=AdnNeYZgt0EXLkcWnipbO7TklOwcywOOVNe4DHDYfyrjGLi3I7e7Tq2K-qplBgKbE5E&_nc_zt=23&_nc_ht=scontent.fcai19-1.fna&_nc_gid=-PMpnllDI_N3dSY17QT_JA&oh=00_AffmUBtYAC8LjM5r8yxMxXJQq9hEShiXSZRyRN0aLRLFaQ&oe=68EE0314"
+                                    alt="">
+                                <div class="row text-center mt-2">
+                                    <div class="col-4">8k <i class="fa-solid fa-heart"></i></div>
+                                    <div class="col-4">400 <i class="fa-solid fa-comment"></i></div>
+                                    <div class="col-4">30 <i class="fa-solid fa-share"></i></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 ">
+                        <div class="card">
+                            <div class="card-body">
+                                <img class="content-img"
+                                    src="https://scontent.fcai19-1.fna.fbcdn.net/v/t39.30808-6/476332303_1280561569910563_7931209908960298169_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=a5f93a&_nc_ohc=AfJvIRx1VF0Q7kNvwE7ZZZU&_nc_oc=AdkEQWRgL6OZqwOeZRkbph0yqTsNmWbNFm8bzJ_0MSFSRF6n9px1YoyZ_DgtxeCnKx8&_nc_zt=23&_nc_ht=scontent.fcai19-1.fna&_nc_gid=8k2G6QBgfQt0JEjmHYtSMw&oh=00_AffUsAkPql6bMKxsmiwcITxbNoEYW_hREoX1NQSWHKThdw&oe=68EDF6A4"
+                                    alt="">
+                                <div class="row text-center mt-2">
+                                    <div class="col-4">34k <i class="fa-solid fa-heart"></i></div>
+                                    <div class="col-4">9K <i class="fa-solid fa-comment"></i></div>
+                                    <div class="col-4">800 <i class="fa-solid fa-share"></i></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 ">
+                        <div class="card">
+                            <div class="card-body">
+                                <img class="content-img"
+                                    src="https://scontent.fcai19-1.fna.fbcdn.net/v/t39.30808-6/476420113_1280548373245216_5982318920903823080_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=a5f93a&_nc_ohc=e6SDeR1xZ_sQ7kNvwE-1cDF&_nc_oc=AdnCKh16gT_GeKJmdIJXN6X7fa-2vbucnPXAuir7nbjuId3igQYOW5WN-d3IyxZ9FPA&_nc_zt=23&_nc_ht=scontent.fcai19-1.fna&_nc_gid=eVBapLh6KugMCX3QfdLvEA&oh=00_AfcG0f4etXvC6uNpFAwac5U8ZoIzlEyu3THpz51fgDiTdA&oe=68EE0021"
+                                    alt="">
+                                <div class="row text-center mt-2">
+                                    <div class="col-4">10k <i class="fa-solid fa-heart"></i></div>
+                                    <div class="col-4">2K <i class="fa-solid fa-comment"></i></div>
+                                    <div class="col-4">300 <i class="fa-solid fa-share"></i></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 ">
+                        <div class="card">
+                            <div class="card-body">
+                                <img class="content-img"
+                                    src="https://scontent.fcai19-1.fna.fbcdn.net/v/t39.30808-6/475184180_1271491087484278_8605599014020577389_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=a5f93a&_nc_ohc=_uiv7hd_wjwQ7kNvwHjfUg4&_nc_oc=Adm_pVRb3cD-uBKTb7eidnGXifjM4SjWvk158RjUdeEEtvtGb9LhDjg4ePF54p5MkUA&_nc_zt=23&_nc_ht=scontent.fcai19-1.fna&_nc_gid=U0eZ-PBu_7EgloDNOU88TA&oh=00_AfcuEOengsj9wwUe4u9J6Ja30ghXH-pKP3s1RtuLOLqE3w&oe=68EDF495"
+                                    alt="">
+                                <div class="row text-center mt-2">
+                                    <div class="col-4">1k <i class="fa-solid fa-heart"></i></div>
+                                    <div class="col-4">50 <i class="fa-solid fa-comment"></i></div>
+                                    <div class="col-4">3 <i class="fa-solid fa-share"></i></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 ">
+                        <div class="card">
+                            <div class="card-body">
+                                <img class="content-img"
+                                    src="https://scontent.fcai19-1.fna.fbcdn.net/v/t39.30808-6/476404870_1280547526578634_4696966778023974963_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=a5f93a&_nc_ohc=rqxqeFyQzPcQ7kNvwE0V_mS&_nc_oc=AdlCT6qg-Jz4GfWuYBY8PKQ16GTs7BBH13MHAqNZh38RAYCjSmntHDCeyqoWcZSHQzQ&_nc_zt=23&_nc_ht=scontent.fcai19-1.fna&_nc_gid=QVp28_qPmHipkk8UWw_QsA&oh=00_AffcFZoOvH5T8f7B1nUEb87XvLUu7TvIsSEseRrM0ZWdFw&oe=68EDE7BF"
+                                    alt="">
+                                <div class="row text-center mt-2">
+                                    <div class="col-4">10k <i class="fa-solid fa-heart"></i></div>
+                                    <div class="col-4">2K <i class="fa-solid fa-comment"></i></div>
+                                    <div class="col-4">300 <i class="fa-solid fa-share"></i></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>

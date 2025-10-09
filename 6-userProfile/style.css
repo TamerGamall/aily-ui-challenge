@@ -1,0 +1,57 @@
+.profile-cover {
+  background: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQUMHGGb-GLEBZwmw_LWfpvqb1puwRa4MC5Gw&s)
+    no-repeat;
+  background-size: cover;
+  height: 100px;
+  border-bottom: solid gray 2px;
+}
+.profile-Img {
+  position: absolute;
+  left: 120px;
+  width: 10%;
+  border: gray solid 3px;
+  border-radius: 50%;
+  background-color: white;
+  border-bottom: solid gray 0.5px;
+}
+.profile-Img img {
+  width: 100%;
+  border-radius: 50%;
+}
+.leftSide {
+  border-right: 1px solid rgba(0, 0, 0, 0.5);
+  box-shadow: 0px 10px 5px rgba(0, 0, 0, 0.2);
+  height: 100%;
+}
+.leftSide .row {
+  font-family: "Alan Sans", sans-serif;
+  /* background-color: red; */
+}
+.cardFollow {
+  border: none;
+}
+.leftSide h1 {
+  font-family: "BBH Sans Hegarty", sans-serif;
+}
+.jop {
+  color: rgba(0, 0, 0, 0.2);
+  font-size: 1.1rem;
+  margin-top: 0;
+}
+.content-img {
+  width: 100%;
+}
+.active {
+  color: #0d6efd;
+  cursor: pointer;
+}
+@media (max-width: 900px) {
+  .profile-Img {
+    width: 25%;
+    left: 35%;
+    top: 1.6rem;
+  }
+  .leftSide {
+    border-right: none;
+  }
+}
