@@ -165,7 +165,7 @@ h1 {
 @media (max-width: 900px) {
   body {
     background: linear-gradient(135deg, navy, black);
-    height: 110vh;
+    height: 100vh;
   }
   h1 {
     display: none;
@@ -174,8 +174,12 @@ h1 {
     display: block;
     position: absolute;
     right: 330px;
-    bottom: -200px;
+    bottom: 150px;
     width: 30%;
+  }
+  .mob img {
+    position: relative;
+    top: 150px;
   }
   .moon {
     position: relative;
