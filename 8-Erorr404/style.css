@@ -174,7 +174,7 @@ h1 {
     display: block;
     position: absolute;
     right: 330px;
-    bottom: 0px;
+    bottom: -100px;
     width: 30%;
   }
   .moon {
