@@ -138,15 +138,6 @@ h1 {
     transform: translate(-50%, -50%) scale(1.02);
   }
 }
-@keyframes bounce {
-  0%,
-  100% {
-    transform: translateY(0);
-  }
-  50% {
-    transform: translateY(-10px);
-  }
-}
 
 .moon-wrap:hover .moon img,
 .moon-wrap:hover .moon::after {
@@ -179,7 +170,7 @@ h1 {
   }
   .mob img {
     position: relative;
-    top: 150px;
+    top: 120px;
   }
   .moon {
     position: relative;
@@ -210,6 +201,7 @@ h1 {
   .c-41 {
     left: 110px;
     top: 50px;
+    animation: bounce 3s infinite ease-in-out;
   }
   .c-42::after {
     content: "0";
@@ -219,5 +211,15 @@ h1 {
   .c-42 {
     left: 110px;
     top: 50px;
+  }
+}
+
+@keyframes bounce {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
   }
 }
