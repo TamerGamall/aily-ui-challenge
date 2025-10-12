@@ -1,0 +1,219 @@
+:root {
+  --size: 300px; /* حجم القمر */
+  --speed: 6s; /* مدة دورة التوهج (نصف للغماز للنور/الظلام) */
+  --bright-max: 1.25; /* أقصى سطوع */
+  --bright-min: 0.65; /* أقل سطوع */
+  --glow-color: 255, 245, 200; /* لون الهالة (RGB بدون alpha) */
+  --glow-max: 0.65; /* شفافية الهالة عند أقصى سطوع */
+  --glow-min: 0.08; /* شفافية الهالة عند أقل سطوع */
+}
+html,
+body {
+  overflow-x: hidden;
+}
+body {
+  background: url(https://t4.ftcdn.net/jpg/02/30/01/97/360_F_230019727_b51vQZWfxtjDT6RoOvgQUdCcYrxVI4yj.jpg)
+    no-repeat;
+  background-size: cover;
+  backdrop-filter: blur(4px);
+  height: 120vh;
+  overflow: hidden;
+}
+h1 {
+  font-family: "BBH Sans Bogle", sans-serif;
+  color: rgb(245, 245, 245, 0.8);
+}
+.navbar-brand {
+  color: rgba(255, 255, 255, 0.5);
+}
+.nav-link {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.number {
+  font-family: "BBH Sans Bogle", sans-serif;
+  font-weight: 300;
+  font-size: 11rem;
+  color: rgba(255, 255, 255, 0.5);
+}
+.c-41 {
+  position: relative;
+  left: 580px;
+  bottom: 30px;
+}
+.c-42 {
+  color: rgba(255, 255, 255, 0.9);
+  position: relative;
+  left: 820px;
+  bottom: -250px;
+}
+
+.text h5 {
+  font-size: 4.5rem;
+}
+.text .btn {
+  font-size: 1.5rem;
+}
+.text {
+  font-family: "BBH Sans Bogle", sans-serif;
+  position: absolute;
+  top: 300px;
+  left: 110px;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.moon-container {
+  filter: drop-shadow(0 10px 30px rgba(0, 0, 0, 0.6));
+}
+.moon {
+  width: 15%;
+  position: relative;
+  left: 650px;
+  bottom: 105px;
+  border-radius: 50%;
+  overflow: hidden;
+  transform: translateZ(0);
+  animation: bounce 3s infinite ease-in-out;
+}
+.moon img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  animation: moon-brightness var(--speed) ease-in-out infinite;
+}
+.moon::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 160%;
+  height: 160%;
+  border-radius: 50%;
+  pointer-events: none;
+  background: radial-gradient(
+    circle,
+    rgba(var(--glow-color), var(--glow-max)) 0%,
+    rgba(var(--glow-color), 0.12) 30%,
+    rgba(0, 0, 0, 0) 60%
+  );
+  mix-blend-mode: screen;
+  filter: blur(18px) saturate(120%);
+  animation: moon-glow var(--speed) ease-in-out infinite;
+}
+@keyframes moon-brightness {
+  0% {
+    filter: brightness(var(--bright-max));
+    transform: scale(1.01);
+  }
+  45% {
+    filter: brightness(calc((var(--bright-min) + var(--bright-max)) / 2));
+    transform: scale(1);
+  }
+  60% {
+    filter: brightness(var(--bright-min));
+    transform: scale(0.995);
+  }
+  100% {
+    filter: brightness(var(--bright-max));
+    transform: scale(1.01);
+  }
+}
+
+@keyframes moon-glow {
+  0% {
+    opacity: 1;
+    filter: blur(20px) saturate(140%);
+    transform: translate(-50%, -50%) scale(1.02);
+  }
+  50% {
+    opacity: 0.45;
+    filter: blur(8px) saturate(100%);
+    transform: translate(-50%, -50%) scale(0.98);
+  }
+  100% {
+    opacity: 1;
+    filter: blur(20px) saturate(140%);
+    transform: translate(-50%, -50%) scale(1.02);
+  }
+}
+@keyframes bounce {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+.moon-wrap:hover .moon img,
+.moon-wrap:hover .moon::after {
+  animation-play-state: paused;
+}
+.mob {
+  display: none;
+}
+
+@media (max-width: 420px) {
+  :root {
+    --size: 220px;
+    --speed: 5s;
+  }
+}
+@media (max-width: 900px) {
+  body {
+    background: linear-gradient(135deg, navy, black);
+    height: 100vh;
+  }
+  h1 {
+    display: none;
+  }
+  .mob {
+    display: block;
+    position: absolute;
+    right: 330px;
+    bottom: 150px;
+    width: 30%;
+  }
+  .moon {
+    position: relative;
+    left: 190px;
+    top: 310px;
+    width: 25%;
+  }
+  .text {
+    bottom: 150px;
+    width: 70%;
+  }
+  .text h5 {
+    font-size: 3.5rem;
+    position: relative;
+    right: 120px;
+    bottom: 100px;
+  }
+  .text .btn {
+    font-size: 1.5rem;
+    right: 400px;
+    position: relative;
+    right: 120px;
+    bottom: 100px;
+  }
+  .number {
+    font-size: 4rem;
+  }
+  .c-41 {
+    left: 110px;
+    top: 50px;
+  }
+  .c-42::after {
+    content: "0";
+    margin-left: 5px;
+    color: rgba(255, 255, 255, 0.7);
+  }
+  .c-42 {
+    left: 110px;
+    top: 50px;
+  }
+}
